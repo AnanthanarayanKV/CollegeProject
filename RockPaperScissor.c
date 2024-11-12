@@ -127,6 +127,8 @@ void options(int y)
     }
 }
 
+
+//main logic processing
 void logic(int a,int b)
 {
     //Computer wins
@@ -170,7 +172,8 @@ void logic(int a,int b)
     }
 }
 
-/* a winning
+/* 
+    a winning
     rock,1 - scissor,3
     paper,2 - rock -1
     scissor,3 - rock-1
@@ -178,4 +181,10 @@ void logic(int a,int b)
     b winning
     rock,1 - paper,2
     paper,2 - scissor,3
-    scissor,3 - rock,1*/
+    scissor,3 - rock,1
+*/
+
+/*Project made by Group11
+==========================
+Ananthanarayan KV -68
+*/
