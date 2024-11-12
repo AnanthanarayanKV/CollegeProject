@@ -56,6 +56,21 @@ int main()
 
     printf("5 Rounds are over and, you scored %d points and computer scored %d points",p1,c1);
 
+    if (p1>c1)
+    {
+        printf("\n\aPlayer has more overall points, Player winss!!\a");
+    }
+    else if (c1>p1)
+    {
+        printf("\n\aComputer has more overall points, Computer winss!!\a\nBetter luck next time");
+    }
+    else
+    {
+        printf("\n\aBoth player and computer have %d points, Its a tie\a", p1);
+    }
+    
+    
+
     
     return 0;
 }
@@ -117,35 +132,35 @@ void logic(int a,int b)
     //Computer wins
     if((a == 1)&&(b==2))
     {
-        printf("\nComputer won!!\n");
+        printf("\nComputer got a point!!\n");
         c1++;
     }
     else if((a == 2)&&(b==3))
     {
-        printf("\nComputer won!!\n");
+        printf("\nComputer got a point!!\n");
         c1++;
     }
     else if((a == 3)&&(b==1))
     {
-        printf("\nComputer won!!\n");
+        printf("\nComputer got a point!!\n");
         c1++;
     }
 
     //Computer wins
     else if((a == 1)&&(b==3))
     {
-        printf("\nPlayer won!!\n");
+        printf("\nPlayer got a point!!\n");
         p1++;
         
     }
     else if((a == 2)&&(b==1))
     {
-        printf("\nPlayer won!!\n");
+        printf("\nPlayer got a point!!\n");
         p1++;
     }
     else if((a == 3)&&(b==1))
     {
-        printf("\nPlayer won!!\n");
+        printf("\nPlayer got a point!!\n");
         p1++;
     }
     else
