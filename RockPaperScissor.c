@@ -15,10 +15,12 @@ int p1 = 0,c1 = 0;
 
 int main()
 {    
-    int player,Computer,i = 0;
-    printf("\n\nSo the game is 5 rounds and whoever has the most points will will the game.\nLet the game begin\n\n");
-    
-    do
+    int player,Computer,rounds,i = 0;
+    printf("\n\nHow many rounds would you like to play\n\n");
+    scanf("%d",&rounds);
+    if(!isdigit(rounds))
+    {
+        do
     {
         printf("\n\nEnter from the options below\n1 - Rock\n2 - Paper\n3 - Scissors\n:>");
         scanf("%d",&player);
@@ -52,9 +54,8 @@ int main()
         // }
         i++;
 
-    }while (i<=5);
-
-    printf("5 Rounds are over and, you scored %d points and computer scored %d points",p1,c1);
+    }while (i<=rounds);
+        printf("5 Rounds are over and, you scored %d points and computer scored %d points",p1,c1);
 
     if (p1>c1)
     {
@@ -68,6 +69,11 @@ int main()
     {
         printf("\n\aBoth player and computer have %d points, Its a tie\a", p1);
     }
+}
+else
+{
+    printf("\nYou have entered something wrong\nCheck again...");
+}
     
     
 
